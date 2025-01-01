@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+
+}
+
+/* Header section */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    margin-bottom: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav>h1 {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+ul li>a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+
+/* Banner Style */
+.banner_content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 862px;
+}
+
+.banner_content>p {
+    color: #727272;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.banner_title {
+    color: #131313;
+    text-align: center;
+    font-size: 65px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.btn_primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600px;
+    border: none;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+/* feature Styles */
+.feature {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.section_picture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.section_picture img {
+    width: 100%;
+}
+
+.feature_title {
+    color: #727272;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    width: 464px;
+    line-height: normal;
+}
+
+.blck_clr {
+    color: #050404;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+}
+
+.yllow_clr {
+    color: #f8e80b;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: normal;
+}
+
+.feature_description {
+    color: #727272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
+/* responsive  */
+@media screen and (max-width:576px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
