@@ -214,6 +214,9 @@ main {
     margin-bottom: 100px;
 }
 
+/* Footer */
+
+
 /* responsive  */
 @media screen and (max-width:576px) {
 
@@ -223,6 +226,7 @@ main {
     }
 
     nav,
+    .sponser-pictures-container,
     .features-2,
     .feature,
     .fact-cards-container {
@@ -242,6 +246,15 @@ main {
     .fact-description,
     .features-2-picture img {
         width: 100%;
+    }
+
+    .sponser-pictures-container img {
+        width: 60%;
+    }
+
+    .sponser-pictures-container {
+        align-items: center;
+        gap: 20px;
     }
 
     .expereince {
