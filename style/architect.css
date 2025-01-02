@@ -181,7 +181,31 @@ main {
     text-align: center;
 }
 
+/* some facts */
+.fact-cards-container {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 180px;
+    justify-content: space-evenly;
+}
 
+.fact-card {
+    text-align: center;
+    border: 2px solid rgb(81, 81, 78);
+    padding: 30px 60px;
+    border-radius: 5px;
+}
+
+.fact-stats {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+/* sponsors style */
+.sponsors {
+    text-align: center;
+}
 
 /* responsive  */
 @media screen and (max-width:576px) {
@@ -193,8 +217,13 @@ main {
 
     nav,
     .features-2,
-    .feature {
+    .feature,
+    .fact-cards-container {
         flex-direction: column;
+    }
+
+    .fact-card {
+        margin-bottom: 10px;
     }
 
     .section_picture {
@@ -203,6 +232,7 @@ main {
     }
 
     .section_picture img,
+    .fact-description,
     .features-2-picture img {
         width: 100%;
     }
@@ -218,13 +248,29 @@ main {
 
 /* For Medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    header {
+
+    header,
+    .fact-description {
         padding: 30px;
     }
 
     nav,
     .features-2 {
         flex-direction: column;
+    }
+
+    .features-2 {
+        padding: 0px 35px;
+    }
+
+    .expereince {
+        position: relative;
+        bottom: 100px;
+        left: -10px;
+    }
+
+    .fact-cards-container {
+        flex-wrap: wrap;
     }
 
     .section_picture img,
